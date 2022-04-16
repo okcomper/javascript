@@ -1,0 +1,41 @@
+01 'use strict
+parsing - 분석하고 이해한다 라고 이해하면될듯
+
+header + async - parsing을 끊지않고 하면서 async 를 만났을 때 소스를 다운받기 시작해서 다운완료시 실행함 실행시 잠시 멈추기때문에
+결과적으론  결과물을 다끌어오기엔 시간이 오래걸린다는 것도있음
+
+head + defer - defer 확인시 다운받자 해놓고 계속 실행은 안하고 대기 실행은 파싱이 끝나고 / 순서가 중요하다면 굿
+
+결과적으로 defer이 최고!
+
+js파일에 코딩할때 상단에 use strict를 선언하고 strict 모드를 사용하면 오류를 웹에서도 확인할수있다 그러므로 왠만하면 써!
+
+
+02 Variable
+변수 - 변하는수!
+{} - 구간안에 들어있으면 그 파트에서만 사용!
+
+변수선언은 let --- / var은 예전것이니까 그냥 버려!
+
+constants - immutable data type
+const--- -> 보안, 효율적 쓰레드활용, 실수를 줄일수있다.
+
+--> immutable type - const / mutable type - let 
+
+숫자 - number 혹은 let 으로 마무리
+
+String `${변수/연산}` => 타입 이런거 별다르게 선언하지 않아도 저표현식은 변수 연산을 삽입가능
+${}의 모든 결과는 자동으로 문자열로 변환됨
+`` - 순수 문자열이 아닐때 여러 것들이 들어갈때 따옴표대신 사용
+
+boolean
+false: 0, null, undefined, NaN, ''
+true = 그냥 나머지
+
+object
+const IZ = {name : 'IZONE', age: 1}
+IZ.age = 23;
+const란 변수는 사실 변경이 안되지만 변수 안에서 나머지 구성요소들을 바꿀순있음!
+
+
+드림코딩 - 4강부터
