@@ -20,6 +20,9 @@ js파일에 코딩할때 상단에 use strict를 선언하고 strict 모드를 �
 constants - immutable data type
 const--- -> 보안, 효율적 쓰레드활용, 실수를 줄일수있다.
 
+immutable - 그냥 pramitive 최초의 모습그대로그냥 고정
+mutable  - all object, javascript에서는 기본적으로 모든 객체들이 mutable
+
 --> immutable type - const / mutable type - let 
 
 숫자 - number 혹은 let 으로 마무리
@@ -38,4 +41,37 @@ IZ.age = 23;
 const란 변수는 사실 변경이 안되지만 변수 안에서 나머지 구성요소들을 바꿀순있음!
 
 
-드림코딩 - 4강부터
+04강
+
+Logical operators: || (or), && (and), ! (not)
+t f t f t f 
+
+ternary operater => ?
+console.log(name === 'ellie' ? 'yes' : 'no');
+ 
+switch statement
+if
+else if - 여러번 반복하게 된다면 고려해볼만한 기능
+
+--반복문
+-while -> 안의 값이 만족될때까지 무한반복되는 구조
+let i = 3;
+while (i > 0) {
+  console.log(`while: ${i}`);
+  i--;
+}
+
+05강
+function
+fundamental building block in the program
+subprogram can be used multiple times
+performs a task or calculatees a value
+
+
+1. function declaration
+function name(param1, param2) {body....return;}
+one function === one thing
+네이밍 - verb 이런 느낌으로
+one fuction이 포인트인듯
+function is object ★
+
